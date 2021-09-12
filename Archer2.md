@@ -1,7 +1,10 @@
-In archer2 you can compile a program using
+# Running MPI in Archer2 Super Computer
+
+## In archer2 you can compile a program using
 
 ```CC test.cpp```
 
+## Batch job
 ```
 #!/bin/bash
 
@@ -38,7 +41,10 @@ export OMP_NUM_THREADS=1
 
 srun --distribution=block:block --hint=nomultithread ./hello
 ```
+### Notes
+Here ta035 is the budget code
 
+## Running a Batch job
 You run a batch job in slurm using
 
 ```sbatch job1.job```
