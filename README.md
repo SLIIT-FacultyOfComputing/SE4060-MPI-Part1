@@ -19,7 +19,8 @@ int main(void)
     else
       print("Just a normal process From rank %d\n", rank);
     MPI_Finalize();
-}```
+}
+```
 
 Compile the program as follows
 
