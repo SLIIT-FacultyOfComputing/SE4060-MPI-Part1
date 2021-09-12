@@ -20,13 +20,14 @@ int main(void)
       print("Just a normal process From rank %d\n", rank);
     MPI_Finalize();
 }```
+
 Compile the program as follows
 
 ```mpiicpc -o job1 HelloMPI.c```
 
 You can control the number of threads to be used by adding the following in the pbs file.
 
-// File is at /mpisamples/job1.pbs in Intel Dev Cluster
+
 ```
 #PBS -l nodes=1
 #PBS -l walltime=00:02:00
