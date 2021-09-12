@@ -2,6 +2,7 @@ In archer2 you can compile a program using
 
 CC test.cpp
 
+```
 #!/bin/bash
 
 # Slurm job options (name, compute nodes, job time)
@@ -36,3 +37,8 @@ export OMP_NUM_THREADS=1
 # Use "srun" to launch the job
 
 srun --distribution=block:block --hint=nomultithread ./hello
+```
+
+You run a batch job in slurm using
+
+```sbatch job1.job```
