@@ -1,6 +1,6 @@
 In archer2 you can compile a program using
 
-CC test.cpp
+```CC test.cpp```
 
 ```
 #!/bin/bash
