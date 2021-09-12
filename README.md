@@ -17,7 +17,7 @@ int main(void)
     if (rank == 0)
       printf("Hello World! From rank %d\n", rank);
     else
-      print("Just a normal process From rank %d\n", rank);
+      printf("Just a normal process From rank %d\n", rank);
     MPI_Finalize();
 }
 ```
@@ -38,20 +38,11 @@ NPROC=2
 cd $PBS_O_WORKDIR
 MPISIZE=$NPROC
 MPIPROG=`basename $PBS_JOBNAME .pbs`
-echo '--------------------------------------------------------------
-------------------'
-BSc (Hons) in Information Technology
-Year 4
-Lab Sheet 6 - MPI
-SE4060 – Parallel Computing Semester 2, 2020
-2
 echo 'Running MPI program' $MPIPROG 'on' $MPISIZE 'processes'
 echo 'Started at' `date`
-echo '--------------------------------------------------------------
-------------------'
+echo '--------------------------------------------------------------------------------'
 (time mpirun -n $MPISIZE ./$MPIPROG) 2>&1
-echo '--------------------------------------------------------------
-------------------'
+echo '--------------------------------------------------------------------------------'
 echo 'Finished at' `date`
 ```
 
