@@ -10,6 +10,6 @@ int main(void)
     if (rank == 0)
       printf("Hello World! From rank %d\n", rank);
     else
-      print("Just a normal process From rank %d\n", rank);
+      printf("Just a normal process From rank %d\n", rank);
     MPI_Finalize();
 }
